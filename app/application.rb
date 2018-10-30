@@ -8,7 +8,7 @@ class Application
     
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-      if Item.all.inlude?(item_name)
+      if Item.all.find(item_name)
       resp.write ""
     else   
       resp.write "Route not found"
