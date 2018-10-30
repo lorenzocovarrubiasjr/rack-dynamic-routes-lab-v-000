@@ -9,7 +9,8 @@ class Application
     if req.path.match(/items/"#{search_term}")
       resp.write ""
     else   
-      resp.write "Path Not Found"
+      resp.write "Route not found"
+      resp.status = 404
   end 
   
 end 
