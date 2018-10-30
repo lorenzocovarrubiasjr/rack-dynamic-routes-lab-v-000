@@ -1,5 +1,8 @@
 class Application
   
-  def 
+  def call(env)
+    resp = Rack::
+    req = Rack::
+  end 
   
 end 
