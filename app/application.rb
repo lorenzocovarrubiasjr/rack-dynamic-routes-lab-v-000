@@ -7,7 +7,7 @@ class Application
     search_term = req.params["q"]
     
     if req.path.match(/items/)
-      item_name = 
+      item_name = req.path.split("/items/").last
       if 
       resp.write ""
     else   
