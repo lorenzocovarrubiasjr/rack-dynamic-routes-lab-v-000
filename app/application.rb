@@ -6,7 +6,8 @@ class Application
     
     search_term = req.params["q"]
     
-    if req.path.match(/items/)
+    if req.path.match(/items/"#{search_term}")
+      resp.write 
   end 
   
 end 
