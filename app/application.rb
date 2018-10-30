@@ -9,7 +9,7 @@ class Application
     if req.path.match(/items/"#{search_term}")
       resp.write ""
     else   
-      
+      resp.write "Path Not Found"
   end 
   
 end 
